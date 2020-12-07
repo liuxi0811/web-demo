@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 1000px;
+            height: 300px;
+            border: 1px solid;
+        }
+
+        li {
+            width: 150px;
+            height: 150px;
+            background: pink;
+            margin: 10px;
+            /* display: flex; */
+            
+        }
+
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        /* section:nth-child(1) ul{
+           overflow: hidden;
+        } */
+        section:nth-child(1) ul li{
+            float: left;
+        }
+        section:nth-child(2) ul{
+            display: flex;
+        }
+
+        section:nth-child(3) ul{
+            display: flex;
+            flex-direction: row;
+        }
+
+        section:nth-child(4){
+            display: flex;
+            flex-direction:row-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>传统布局</h1>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+        </div>
+    </section>
+
+    <section>
+        <h1>伸缩盒子</h1>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+        </div>
+    </section>
+
+    <section>
+        <h1>伸缩盒子row 水平方向</h1>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+        </div>
+    </section>
+
+    <section>
+        <h1>伸缩盒子row- reverse 反转</h1>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+        </div>
+    </section>
+
+    <section>
+        <h1>伸缩盒子column 垂直方向</h1>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+        </div>
+    </section>
+
+    <section>
+        <h1>伸缩盒子column- reverse 反转列</h1>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+        </div>
+    </section>
+</body>
+
+</html>

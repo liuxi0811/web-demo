@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav .item {
+
+            height: 90px;
+            /* background-color: violet; */
+            margin: 10px;
+            display: flex;
+            border-radius: 15px;
+        }
+
+        .nav .item:nth-child(1) {
+            background-color: pink;
+        }
+
+        .nav .item:nth-child(2) {
+            background-color: rgb(107, 107, 235);
+        }
+
+        .nav .item:nth-child(3) {
+            background-color: rgb(107, 235, 135);
+        }
+
+        .nav .item:nth-child(4) {
+            background-color: orange;
+        }
+
+       .item1{
+            flex: 1;
+            border-right: 1px solid white;
+        }
+
+         .item2{
+            flex: 2;
+        }
+
+        .item .item2 a{
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            width: 50%;
+            height: 45px;
+            display: flex;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="top">
+            <div>
+                <a href="">
+                    <img src="..\资料\images\banner.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="item">
+                <div class="item1"></div>
+                <div class="item2">
+                    <a href="">海外酒店</a>
+                    <a href="">团购</a>
+                    <a href="">特惠酒店</a>
+                    <a href="">客栈公寓</a>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="item1"></div>
+                <div class="item2">
+                    <a href="">火车票</a>
+                    <a href="">汽车票船票</a>
+                    <a href="">国际机票</a>
+                    <a href="">自驾专车</a>
+                </div>
+            </div>
+
+
+
+            <div class="item">
+                <div class="item1"></div>
+                <div class="item2">
+                    <a href="">攻略身边</a>
+                    <a href="">邮轮</a>
+                    <a href="">周末游</a>
+                    <a href="">保险签证</a>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="item2">
+                    <a href="">门票玩乐</a>
+                    <a href="">美食</a>
+                    <a href="">全球购</a>
+                    <a href="">礼品卡</a>
+                    <a href="">出镜WIFI</a>
+                    <a href="">更多</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href=""><img src="..\资料\images\extra_1.png" alt=""></a>
+            <a href=""><img src="..\资料\images\extra_2.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>

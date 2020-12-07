@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /*第一屏*/
+        .first {
+            padding-top: 80px;
+        }
+
+        .first .logo {
+            width: 251px;
+            height: 186px;
+            margin: 0 auto;
+            background-image: url('images/logo.png');
+        }
+
+        .first .text {
+            text-align: center;
+            line-height: 1;
+            margin: 85px 0 45px;
+        }
+
+        .first img {
+            margin: 0 24px;
+            opacity: 0;
+        }
+
+        .first .info {
+            height: 49px;
+            background: url('images/info_1.png') center center no-repeat;
+        }
+
+        /*第一屏动画*/
+        .first.current img {
+            margin: 0;
+            opacity: 1;
+            /*过渡，可以实现元素不同状态间的平滑过渡（补间动画）*/
+            transition: all 1s ease-out 0.3s;
+        }
+
+
+        /*第二屏*/
+        .second {
+            padding: 0 100px;
+            background-color: pink;
+        }
+
+        .second > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .second .shield {
+            width: 428px;
+            height: 498px;
+        }
+
+        .second img {
+            display: block;
+            float: left;
+        }
+
+        .second img:nth-child(1) {
+            transform: translate(35px, 78px) rotate(45deg);
+        }
+
+        .second img:nth-child(2) {
+            transform: translate(135px, 282px) rotate(15deg);
+        }
+
+        .second img:nth-child(3) {
+            transform: translate(187px, 62px) rotate(15deg);
+        }
+
+        .second img:nth-child(4) {
+            transform: translate(10px, 162px) rotate(30deg);
+        }
+
+        .second img:nth-child(5) {
+            transform: translate(465px, 522px) rotate(30deg);
+        }
+
+        .second img:nth-child(6) {
+            transform: translate(480px, 62px) rotate(90deg);
+        }
+
+        .second img:nth-child(7) {
+            transform: translate(180px, -305px) rotate(80deg);
+        }
+
+        .second img:nth-child(8) {
+            transform: translate(300px, -22px) rotate(70deg);
+        }
+
+        .second img:nth-child(9) {
+            transform: translate(280px, -322px) rotate(60deg);
+        }
+
+        .second .info {
+            width: 635px;
+            height: 309px;
+            background: url('images/info_2.png');
+        }
+        /*第二屏动画*/
+        .second.current img {
+            transform: translate(0, 0) rotate(0deg);
+            transition: all 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+<div id="fullpage">
+    <!-- 第一屏 -->
+    <div class="section first">
+        <!-- LOGO -->
+        <div class="logo"></div>
+        <!-- 文字 -->
+        <div class="text">
+            <img src="./images/text_1.png" alt="">
+            <img src="./images/text_2.png" alt="">
+            <img src="./images/text_3.png" alt="">
+            <img src="./images/text_4.png" alt="">
+            <img src="./images/text_5.png" alt="">
+            <img src="./images/text_6.png" alt="">
+            <img src="./images/text_7.png" alt="">
+            <img src="./images/text_8.png" alt="">
+        </div>
+        <!-- 信息 -->
+        <div class="info"></div>
+    </div>
+    <!-- 第二屏 -->
+    <div class="section second current">
+        <!-- 盾牌 -->
+        <div class="shield">
+            <img src="./images/shield_1.png" alt="">
+            <img src="./images/shield_2.png" alt="">
+            <img src="./images/shield_3.png" alt="">
+            <img src="./images/shield_4.png" alt="">
+            <img src="./images/shield_5.png" alt="">
+            <img src="./images/shield_6.png" alt="">
+            <img src="./images/shield_7.png" alt="">
+            <img src="./images/shield_8.png" alt="">
+            <img src="./images/shield_9.png" alt="">
+        </div>
+        <!-- 信息 -->
+        <div class="info"></div>
+    </div>
+
+</div>
+</body>
+</html>
